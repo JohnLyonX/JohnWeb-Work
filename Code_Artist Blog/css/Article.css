@@ -1,0 +1,41 @@
+.Article{
+    border: .1rem solid;
+    width: 100%;
+    height: auto;
+    padding: 30px 50px;
+}
+.Article h1{
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: left;
+    line-height: 70px;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+}
+.ArticleContent{
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    text-align: center;
+}
+.ArticleContent h1{
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    line-height: 30px;
+    letter-spacing: .2rem;
+}
+.ArticleContent ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+.ArticleContent ul li{
+    line-height: 2rem;
+}
+.ArticleContent ul li a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    letter-spacing: .1rem;
+}

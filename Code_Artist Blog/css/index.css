@@ -1,0 +1,244 @@
+/*初始化*/
+body,html{
+    width: 100%;
+    background: #0b0b23;
+    padding: 20px 0;
+}
+*{
+    color: #00ff0d;
+    border-color: #00ff0d;
+    padding: 0;
+    margin: 0;
+    border-radius: 1rem;
+}
+section{
+    width: 80%;
+    height: auto;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+/*初始化*/
+
+/*头部*/
+header{
+    width: 80%;
+    height: auto;
+    border: .1rem solid;
+    /*border: 1.5px solid white;*/
+    margin: 0 auto;
+    padding: 20px 0;
+}
+header h1{
+    /*color: white;*/
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    line-height: 70px;
+    letter-spacing: 10px;
+}
+header h1 em{
+    /*color: white;*/
+}
+header h1 sup{
+    /*color: white;*/
+    font-size: 10px;
+    letter-spacing: 5px;
+}
+@media screen and (max-width: 780px){
+    header h1{
+        font-size: 1.5rem;
+        letter-spacing: 5px;
+    }
+    header h1 sup{
+        font-size: 8px;
+        letter-spacing: 2px;
+    }
+}
+/*头部*/
+
+/*导航栏*/
+nav{
+    width: 80%;
+    margin: 20px auto;
+    /*border: 1.5px solid white;*/
+    border: .1rem solid ;
+    padding: 30px 0;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+}
+nav ul li{
+    width:100px;
+    height: auto;
+    text-align: center;
+}
+nav ul li a:hover{
+    color: #0b0b23;
+    /*background: white;*/
+    background: #00ff0d;
+    border-radius: 0;
+    padding: 5px 10px;
+}
+/*导航栏*/
+
+/*简述和文章*/
+.pronoun{
+    width:49%;
+}
+.aboutMe{
+    width:100%;
+    height: auto;
+    border: .1rem solid;
+    margin-top: 9px;
+    text-align: center;
+    padding: 20px 0;
+}
+.aboutMe h2{
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    line-height: 30px;
+}
+.aboutMe_Content{
+    width: 80%;
+    height: 100%;
+    letter-spacing: 2px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 30px;
+    padding: 20px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+}
+.describe{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: .1rem;
+    width: 100%;
+    height: 100px;
+    border: .1rem solid;
+
+}
+div.mark{
+    position: relative;
+    top: 2px;
+    left: -5px;
+    display: inline-block;
+    border: .4rem solid;
+    border-radius: 0;
+    height: 10px;
+    animation: blink 1s step-end 0s infinite forwards;
+}
+article.homeArticle{
+    width: 49%;
+    height: auto;
+    border: .1rem solid;
+    text-align: center;
+    padding: 20px 0;
+}
+.homeArticle span{
+    font-size: 1.8rem;
+    letter-spacing: 5px;
+}
+.articleDirectory{
+    width:90%;
+    height: 100%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.ArticleClassify{
+    letter-spacing: 2px;
+    text-align: left;
+    line-height: 35px;
+}
+.ArticleClassify h2{
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+.ArticleClassify ul li{
+    list-style: none;
+}
+.ArticleClassify ul li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+@media screen and (max-width: 1200px){
+    .describe h2{
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+    }
+}
+@keyframes blink{
+    from,to{
+        border-color: transparent;
+    }
+
+    50%{
+        border-color: #00ff0d;
+    }
+}
+@media screen and (max-width: 780px){
+    section{
+        flex-direction: column;
+    }
+    .pronoun{
+        width: 100%;
+    }
+    article.homeArticle{
+        width: 100%;
+        margin: 9px auto;
+    }
+    .Partitionoff{
+        height: auto;
+        border-radius: 0;
+        border: .1rem solid;
+    }
+}
+/*简述和文章*/
+
+/*关于这个博客*/
+.aboutBlog{
+    width: 100%;
+    height: auto;
+    border: .1rem solid;
+    padding: 20px 0;
+}
+.aboutBlog h2{
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    line-height: 30px;
+    text-align: center;
+}
+.aboutBlog_Content{
+    width: 80%;
+    height: 100%;
+    letter-spacing: 1px;
+    line-height: 2rem;
+    text-align: left;
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/*版权*/
+footer{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 0;
+    line-height: 2rem;
+}
+footer h3,h4{
+    font-weight: 400;
+    letter-spacing: .1rem;
+}
